@@ -1,0 +1,499 @@
+<!doctype HTML>
+
+<!-- filename: warder.in main
+     author: Erin Ward
+     date: July 21, 2013
+-->
+    
+<html>
+
+	<head>
+	
+		<title>Erin Ward</title>
+		
+		<meta charset="UTF-8">
+		
+		<link rel="stylesheet" type="text/css" media="screen and (max-width: 800px)" href="style/mobile.css">
+		
+		<link rel="stylesheet" type="text/css" media="screen and (min-width: 801px)" href="style/style.css">
+		
+		<link rel="shortcut icon" href="images/icon.ico" >
+		
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700|Roboto:400,300' rel='stylesheet' type='text/css'>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		
+		<script type="text/javascript">		
+
+			var visible = false;
+			var header2 = document.createElement("div");
+			header2.id = "secondHead";
+			header2.innerHTML = '<div id="secondHeadLeft"><a href="http://warder.in/home/"><img src="images/logosmallbold.png" alt="logo" class="logo2"/> <h2>ERIN WARD</h2></a></div><div id="secondHeadRight"><ul><li><a href="#anchor_work"> PORTFOLIO </a></li><li><a href="#anchor_blogs"> BLOGS </a></li><li><a href="#anchor_cv"> CV </a></li><li><a href="#anchor_contact"> CONTACT </a></li></ul></div>';
+ 
+			onscroll = function() {
+  				var nVScroll = document.documentElement.scrollTop || document.body.scrollTop;
+  				visible = nVScroll > 150 ?
+    			visible || (document.body.appendChild(header2), true)
+    			: visible && (document.body.removeChild(header2), false);
+			};
+
+	</script>
+		
+	</head>
+	
+	<body>
+	
+		<header>
+		
+			
+		
+			<a href="http://warder.in">
+
+				<img src="images/logosmallbold.png" alt="logo" class="logoMain"/>
+
+				<h1>ERIN WARD</h1>
+
+			</a>
+					
+			
+		PILGRIMS TUMBLR THEME
+			
+		
+		</header>
+		
+		<div id = "quicknav">
+		
+			<ul>
+			
+				<li><a href="http://twitter.com/warderin/"><img src="images/icontw.png" alt="twitter link" /></a></li>
+			
+				<li><a href="http://ca.linkedin.com/pub/erin-ward/45/1b7/97b/"><img src="images/iconli.png" alt="linkedin link" /></a></li>
+				
+				<li><a href="http://github.com/warderin/"><img src="images/icongi.png" alt="github link" /></a></li>
+			
+			</ul>
+		
+		</div>
+		
+		<section id = "introwrap">
+		
+			<section id = "intro">
+		
+				<textarea disabled="true" style="border:none;background-color:white;font-size:10pt;width:800px;height:400px;overflow:auto;">
+<!DOCTYPE html>
+<html>
+<head>
+{block:Description} <meta name="description" content="{MetaDescription}" /> {/block:Description}
+<title>{block:TagPage}{Tag} - {/block:TagPage} {block:SearchPage}{lang:Search results for SearchQuery} - {/block:SearchPage}{block:PostSummary}{PostSummary} - {/block:PostSummary}{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}"/>
+<link rel="alternate" type="application/rss+xml" title="{Title} RSS" href="{RSS}"/>
+<link href='http://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://static.tumblr.com/hznqxps/ivOmgjf8v/normalize.css" />
+
+<meta name="color:Background"/>
+<meta name="color:Quote Background"/>
+<meta name="color:Text"/>
+<meta name="color:Link"/>
+<meta name="color:Link Hover"/>
+
+<meta name="if:Captions"/>
+<meta name="if:Italicize"/>
+<meta name="if:Show Description"/>
+<meta name="if:Use Raleway for Title" content="1"/>
+
+<meta name="font:Body" content="Helvetica Neue"/> 
+
+<meta name="text:Title Font Size" content="36"/>
+<meta name="text:Post Font Size" content="14"/>
+
+<meta name="if:Twitter Link"/>
+<meta name="text:Twitter Username"/>
+<meta name="if:Facebook Link"/>
+<meta name="text:Facebook Username"/>
+
+
+<style>
+
+body {
+font-family:{font:Body};
+font-weight: 200;
+color:{color:Text};
+{block:IfItalicize}
+font-style: italic;
+{/block:IfItalicize}
+}
+
+header {
+color:{color:Text};
+width:600px;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
+
+#content {
+font-size:{text:Post Font Size}px;
+{block:IndexPage}width: 950px;{/block:IndexPage}
+{block:PermalinkPage}width:630px;{/block:PermalinkPage}
+
+margin: 0 auto;
+
+}
+
+a {
+text-decoration: none;
+color:{color:Link};
+}
+
+a:hover {
+color:{color:Link Hover};
+}
+
+.caption {
+display: none;
+font-size: 10px;
+{block:IfCaptions}display: block;{/block:IfCaptions}
+}
+
+ul {
+padding: 0px;
+}
+
+li {
+list-style-type: none;
+display: inline;
+padding: 10px;
+}
+
+h1 {
+font-size:{text:Title Font Size}px;
+{block:IfUseRalewayforTitle}
+font-family:'Raleway', sans-serif;
+{/block:IfUseRalewayforTitle}
+letter-spacing: 0.1em;
+text-transform: uppercase;
+}
+
+.bullet {
+margin:0px 5px 0px 5px; 
+color:{color:Link Hover};
+}
+
+blockquote {
+background-color: {color:Quote Background};
+margin: 0;
+padding: 2%;
+margin-bottom:10px;
+}
+
+}
+
+.item {
+display: block;
+float: left;
+width: 300px;
+margin: 0 10px 15px 0;
+
+}
+
+.photo {
+display: block;
+{block:IndexPage}
+width:300px;
+float:left;
+{/block:IndexPage}
+{block:PermalinkPage}
+width:630px;
+float: left;
+{/block:PermalinkPage}
+-webkit-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+	-moz-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+	-ms-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+	-o-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+	transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+}
+
+.photo img{
+{block:IndexPage}
+width:300px;
+{/block:IndexPage}
+{block:PermalinkPage}
+width:630px;
+{/block:PermalinkPage}
+}
+
+.video {
+display: block;
+{block:IndexPage}
+width: 300px;
+{/block:IndexPage}
+{block:PermalinkPage}
+width:750px;
+float: left;
+{/block:PermalinkPage}
+}
+
+.quote {
+width:300px;
+padding:10px 0px;
+}
+
+.item img {
+height: auto;
+-webkit-transition: 0.15s ease-in;
+}
+
+img:hover {
+opacity: 0.3; 
+filter: alpha(opacity = 30);
+-webkit-transition: 0.15s ease-in;
+}
+
+.metadata {
+font-size: 10px;
+margin-top: -11px;
+margin-bottom:2px;
+}
+
+#pagination {
+position: fixed;
+bottom:10px;
+right:15px;
+}
+
+#pagination li {
+border: 1px solid {color:Link};
+background-color: #000;
+display: block;
+text-align: center;
+}
+
+.notecount {
+}
+
+cite {
+margin-bottom: 10px;
+padding-bottom: 10px;
+}
+
+.desc {
+font-size: 11px;
+font-style: italic;
+}
+
+{CustomCSS}
+
+</style>
+
+</head>
+
+<body>
+<header id="masthead">
+    <h1>{Title}</h1>
+    {block:IfShowDescription}<p class="desc">{Description}</p>{/block:IfShowDescription}
+    <nav>
+<ul>
+    <li> <a href="/" title="{lang:Home}">home</a> </li>
+    {block:HasPages}
+    {block:Pages}
+    <span class="bullet">&bull;</span>
+    <li> <a href="{URL}">{Label}</a></li>
+    {/block:Pages}
+    {/block:HasPages}
+    {block:SubmissionsEnabled}
+    <span class="bullet">&bull;</span>
+    <li> <a href="/submit">{SubmitLabel}</a></li>
+    {/block:SubmissionsEnabled}
+    {block:AskEnabled}
+    <span class="bullet">&bull;</span>
+    <li> <a href="/ask">{AskLabel}</a></li>
+    {/block:AskEnabled}
+    {block:IfTwitterLink}
+    <span class="bullet">&bull;</span>
+    <li> <a href="http://twitter.com/{text:Twitter Username}">twitter</a> </li>
+    {/block:IfTwitterLink}
+    {block:IfFacebookLink}
+    <span class="bullet">&bull;</span>
+    <li> <a href="http://facebook.com/{text:Facebook Username}">facebook</a> </li>
+    {/block:IfFacebookLink}
+    <span class="bullet">&bull;</span>
+    <li> <a href="http://warder.in">theme</a> </li>
+</ul>
+</nav>
+</header>
+
+
+ 
+<div id="content">
+    {block:Posts}
+    <article class="item">
+        {block:Text}
+        <div class="text inner">
+            {block:Title}<h2 class="title"><a href="{Permalink}">{Title}</a></h2>{/block:Title}
+            {Body}
+        {/block:Text}
+
+        {block:Photo}
+        <div class="photo inner">
+            <a href="{Permalink}"><img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" /></a>
+            <div class="caption">{block:Caption}{Caption}{/block:Caption}</div>
+        {/block:Photo}
+
+        {block:Photoset}
+        <div class="photoset inner">
+            {Photoset-250}
+            <div class="caption">{block:Caption}{Caption}{/block:Caption}</div>
+        {/block:Photoset}
+
+        {block:Quote}
+        <div class="quote inner">
+            <blockquote>{Quote}</blockquote>
+            {block:Source}<cite> {Source} </cite>{/block:Source}
+        {/block:Quote}
+
+        {block:Link}
+        <div class="link inner">
+            <h1 class="title"><a href="{URL}">{Name}</a></h1>
+            {block:Description}{Description}{/block:Description}
+        {/block:Link}
+
+        {block:Chat}
+        <div class="chat inner">
+            <ul>
+                {block:Lines}<li class="{Alt}"><p>{block:Label}<strong>{Label}</strong>{/block:Label} {Line} </p></li>{/block:Lines}
+            </ul>
+        {/block:Chat}
+
+        {block:Audio}
+        <div class="audio inner">
+            {block:TrackName}<h1 class="title"><a href="{Permalink}">{TrackName}</a></h1>{/block:TrackName}
+            {block:AlbumArt}<img src="{AlbumArtURL}" width="500" height="500"/>{/block:AlbumArt}
+            {AudioPlayerBlack}
+            <div class="caption">{block:Caption}{Caption}{/block:Caption}</div>
+        {/block:Audio}
+
+        {block:Video}
+        <div class="video inner">
+            {Video-250}
+        <div class="caption">{block:Caption}{Caption}{/block:Caption}</div>
+        {/block:Video}
+
+        {block:Answer}
+        <div class="answer inner">
+            <h1 class="title">{Question}</h1>
+            <div class="user"><img src="{AskerPortraitURL-96}"/><p>{Asker}</p></div>
+            {Answer}
+        {/block:Answer}
+        </div>
+
+        {block:Date}
+        <footer class="metadata">
+                <li><a href="{Permalink}">{24Hour}:{Minutes}, {DayOfMonthWithZero} {ShortMonth}</a></li>
+
+                {block:NoteCount}<li>- <a class="notecount" href="{Permalink}#notes">{NoteCountWithLabel}</a></li>{/block:NoteCount}
+                
+
+            {block:PermalinkPage}
+            
+            {block:PostNotes}
+            <div id="notes">
+                {PostNotes-16}
+            </div>
+            {/block:PostNotes} 
+            {/block:PermalinkPage} 
+        </footer>
+        {/block:Date}
+     </article>
+    {/block:Posts}
+    {block:Pagination}
+    <nav id="pagination">
+        <ul>
+            {block:PreviousPage}<li><a href="{PreviousPage}"><<<</a></li>{/block:PreviousPage}
+            {block:NextPage}<li><a href="{NextPage}">>>></a></li>{/block:NextPage}
+        </ul>
+    </nav>
+    {/block:Pagination}
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://static.tumblr.com/iwtk77u/Yhym2yygt/jquery.imagesloaded.min.js"></script>
+<script src="http://static.tumblr.com/wgijwsy/Ebfm2v4gy/jquery.masonry.min.js"></script>
+<script src="http://static.tumblr.com/wgijwsy/u2vm2hxv6/jquery.infinitescroll.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        
+    
+
+	// Initialize Masonry
+	$('#content').masonry({
+		columnWidth: 317,
+		itemSelector: '.item',
+		isFitWidth: true
+	}).imagesLoaded(function() {
+		$(this).masonry('reload');
+	});
+});
+</script>
+
+</body>
+</html>
+				
+				</textarea>
+		
+			</section>
+		
+		</section>
+		
+		
+		
+		<section id = "contactwrap">
+		
+		<div class="anchorfix">
+		<a id="anchor_contact"></a>
+		</div>
+		
+			<section id = "contact">
+		
+				<section id = "contactform">
+				
+					<b>Email Me:</b><br><br>
+				
+					<form action="process.php" method="post">
+					
+					<label for="name">Name: </label>
+					<input type="text" id="name" name="name" placeholder="Liz Lemon" required/>
+					
+					
+					<label for="email">Email: </label>
+					<input type="email" id="email" name="email" placeholder="liz@tgs.com" required/>
+					
+					
+					<label for="message">Message: </label>
+					<textarea id="message" name="message" placeholder="I want to go to there." required></textarea>
+					
+					
+  					<input type="submit" value="Send">
+					
+					</form>
+			
+				</section>
+			
+				<section id = "contactlinks">
+				
+					<b>Email:</b> erinxward[at]gmail[dot]com
+					<br><br>
+					<b>Phone:</b> (519) 520-7336
+					<br><br>
+					Site and content by Erin Ward, 2013
+			
+				</section>
+			
+			</section>
+		
+		</section>
+	
+	</body>
+	
+</html>

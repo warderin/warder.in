@@ -1,0 +1,307 @@
+<!doctype HTML>
+
+<!-- filename: warder.in main
+     author: Erin Ward
+     date: July 21, 2013
+-->
+    
+<html>
+
+	<head>
+	
+		<title>Erin Ward</title>
+		
+		<meta charset="UTF-8">
+		
+		<link rel="stylesheet" type="text/css" media="screen and (max-width: 800px)" href="style/mobile.css">
+		
+		<link rel="stylesheet" type="text/css" media="screen and (min-width: 801px)" href="style/style.css">
+		
+		<link rel="shortcut icon" href="images/icon.ico" >
+		
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700|Roboto:400,300' rel='stylesheet' type='text/css'>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		
+		<script type="text/javascript">		
+
+			var visible = false;
+			var header2 = document.createElement("div");
+			header2.id = "secondHead";
+			header2.innerHTML = '<div id="secondHeadLeft"><a href="http://warder.in/home/"><img src="images/logosmallbold.png" alt="logo" class="logo2"/> <h2>ERIN WARD</h2></a></div><div id="secondHeadRight"><ul><li><a href="#anchor_work"> PORTFOLIO </a></li><li><a href="#anchor_blogs"> BLOGS </a></li><li><a href="#anchor_cv"> CV </a></li><li><a href="#anchor_contact"> CONTACT </a></li></ul></div>';
+ 
+			onscroll = function() {
+  				var nVScroll = document.documentElement.scrollTop || document.body.scrollTop;
+  				visible = nVScroll > 150 ?
+    			visible || (document.body.appendChild(header2), true)
+    			: visible && (document.body.removeChild(header2), false);
+			};
+
+	</script>
+		
+	</head>
+	
+	<body>
+	
+		<header>
+		
+			
+		
+			<img src="images/logosmallbold.png" alt="logo" class="logoMain"/>
+
+			<h1>ERIN WARD</h1>
+					
+			<ul class="links">
+			
+				<li>
+				
+					<a href="#anchor_work">PORTFOLIO</a>
+					
+				</li>
+				
+				•
+				
+				<li>
+				
+					<a href="#anchor_blogs">BLOGS</a>
+					
+				</li>
+				
+				•
+			
+				<li>
+				
+					<a href="#anchor_cv">CV</a>
+					
+				</li>
+				
+				•
+				
+				<li>
+				
+					<a href="#anchor_contact">CONTACT</a>
+					
+				</li>
+		
+			</ul>
+		
+			
+		
+		</header>
+		
+		<div id = "quicknav">
+		
+			<ul>
+			
+				<li><a href="http://twitter.com/warderin/"><img src="images/icontw.png" alt="twitter link" /></a></li>
+			
+				<li><a href="http://ca.linkedin.com/pub/erin-ward/45/1b7/97b/"><img src="images/iconli.png" alt="linkedin link" /></a></li>
+				
+				<li><a href="http://github.com/warderin/"><img src="images/icongi.png" alt="github link" /></a></li>
+			
+			</ul>
+		
+		</div>
+		
+		<section id = "introwrap">
+		
+			<section id = "intro">
+		
+				<section id = "introtext">
+				
+					Hi, I'm Erin, a second-year Software Development & Network Engineering student at Sheridan College. I have a special love for web development, and in my spare time you can find me cooking or reading. On this site, you can find information about me, my portfolio, and what I'm currently up to!
+			
+				</section>
+			
+				<section id = "intropic">
+				
+					<img src="images/temppic.png" alt="my photo" />
+			
+				</section>
+		
+			</section>
+		
+		</section>
+		
+		<section id = "workwrap">
+		
+		<div class="anchorfix">
+		<a id="anchor_work"></a>
+		</div>
+		
+			<section id = "work">
+			
+				<h3 class = "work">RECENT & CURRENT WORK</h3>
+			
+				<div id="workleft">
+				<a href="http://mobile.sheridanc.on.ca/~warderi/foodfood/login.php">
+				<img src = "images/s3.png" alt="FoodFood Printscreen" />
+				FoodFood</a>
+				<br>
+				<p>
+					A Pinterest-style recipe sharing website with user account and recipe uploads using PHP, JSON and AJAX.
+				</p>
+
+				<br>
+
+				<a href="http://warderin.tumblr.com">
+				<img src="images/ex1.png" alt="pilgrims theme print screen" />
+				Pilgrims Tumblr Theme</a>
+				<br>
+				<p>
+					A free, grid based tumblr theme using the Masonry jQuery plugin.
+					<a href="http://warder.in/home/source.html"><u>Source Code</u></p>
+				</div>
+				
+				<div id="workmid">
+				<a href="http://warder.in/map/">
+				<img src = "images/s1.png" alt="Map Printscreen" />
+				Go To There</a> 
+				<br>
+				<p>
+					A work-in-progress roadtrip planning web app using a Google Maps KML file.
+				</p>
+				</div>
+				
+				<div id="workright">
+				<a href="http://forkinaround.tumblr.com">
+				<img src = "images/s2.png" alt="Forkin Around Printscreen" />
+				Forkin' Around</a>
+				<br>
+				<p>
+					A personalized tumblr theme featuring a sidebar and recipe index.
+				</p>
+				</div>
+			
+			</section>
+			
+		</section>
+		
+		<section id = "currentwrap">
+		
+		<div class="anchorfix">
+		<a id="anchor_blogs"></a>
+		</div>
+		
+			<section id = "current" style="text-align:center;">
+					
+					<p style="color:#FFF;">Blogs</p>
+			
+					<a href="http://forkinaround.tumblr.com" style="color:white;"><h2>Forkin' Around</h2></a>
+					<br><br>
+					
+					<a href="http://warder.in/books/" style="color:white;"><h2>Book Blog</h2></a>
+			
+					
+			
+			</section>
+		
+		</section>
+		
+		<section id = "cvwrap">
+		
+		<div class="anchorfix">
+		<a id="anchor_cv"></a>
+		</div>
+		
+			<section id = "cv">
+			
+				<p class="paraHead">CV</p>
+		
+				<section id = "cvleft">
+		
+				<h3>Skills</h3>
+				
+				<p class="cvPara">
+				Advanced: HTML5, CSS3, Javascript/JQuery<br>
+				Proficient: Java, Shell scripting, PHP, AJAX/jSON, mySQL<br>
+				Learning: Ruby/Rails
+				</p>
+				
+				<h3>Programming Interests & Goals</h3>
+				
+				<p class="cvPara">
+				- Developing responsive, scalable web apps and corresponding databases<br>
+				- Improve this website using homemade jQuery plugins and Ajax for interactivity and immediate updates<br>
+				- Heighten and utilise knowledge of application security
+				</p>
+				
+				</section>
+				
+				<section id = "cvright">
+				
+				<h3>Education</h3>
+				
+				<p class="cvPara">
+				Advanced Diploma in Computer Systems - Software Development & Network Engineering Co-op<br>
+				Sheridan College, Oakville, Ontario<br>
+				GPA: 3.62<br>
+				Favourite courses - Java II, Web Development 2, Database Design + Implementation
+				</p>
+				
+				<h3>Other Hobbies</h3>
+				
+				<p class="cvPara">
+				- Cooking<br>
+				- Reading<br>
+				- Online Learning - Check out my profiles at <a href="http://duolingo.org/warderin">Duolingo</a> and <a href="http://www.codecademy.com/warderin">CodeAcademy</a><br>
+				- Board Games & Trivia
+				</p>
+				
+				</section>
+				
+				<p class="cvLink"><a href="http://warder.in/CV.pdf" style="color:#000;margin-top:30px;">Click here to download full resume</a></p>
+			
+			</section>
+		
+		</section>
+		
+		<section id = "contactwrap">
+		
+		<div class="anchorfix">
+		<a id="anchor_contact"></a>
+		</div>
+		
+			<section id = "contact">
+		
+				<section id = "contactform">
+				
+					<b>Email Me:</b><br><br>
+				
+					<form action="process.php" method="post">
+					
+					<label for="name">Name: </label>
+					<input type="text" id="name" name="name" placeholder="Liz Lemon" required/>
+					
+					
+					<label for="email">Email: </label>
+					<input type="email" id="email" name="email" placeholder="liz@tgs.com" required/>
+					
+					
+					<label for="message">Message: </label>
+					<textarea id="message" name="message" placeholder="I want to go to there." required></textarea>
+					
+					
+  					<input type="submit" value="Send">
+					
+					</form>
+			
+				</section>
+			
+				<section id = "contactlinks">
+				
+					<b>Email:</b> erinxward[at]gmail[dot]com
+					<br><br>
+					<b>Phone:</b> (519) 520-7336
+					<br><br>
+					Site and content by Erin Ward, 2013
+			
+				</section>
+			
+			</section>
+		
+		</section>
+	
+	</body>
+	
+</html>

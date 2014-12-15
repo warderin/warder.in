@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+  
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    
+    <meta charset="utf-8">
+    
+    <title>Road Trip</title>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <link rel="shortcut icon" href="icon.ico" >
+		
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700|Roboto:400,300' rel='stylesheet' type='text/css'>
+		
+    
+    <style>
+    
+    html, body { 
+    width: 100%; 
+    height: 100%; 
+    }
+    
+    #container {
+    width: 100%;
+    height: 100%;
+    }
+    
+    #map-canvas {
+    height: 100%;
+    width: 80%;
+    top: 75px;
+    left: 0;
+    position: absolute;
+    z-index: 200;
+    }
+    
+    #sidebar {
+    height: 100%;
+    width: 20%;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    background-color: #CCC;
+    }
+    
+    
+    </style>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    
+    <script>
+
+	
+		function initialize() {
+		
+  			var home = new google.maps.LatLng(50.47018,-104.648316);
+  			var mapOptions = {
+    			zoom: 4,
+    			center: home,
+    			mapTypeId: google.maps.MapTypeId.ROADMAP
+  			}
+
+  			var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+  			var routeLayer = new google.maps.KmlLayer( {
+    			url: 'http://warder.in/Untitledlayer.kml'
+  			} );
+  	
+  			routeLayer.setMap(map);
+		
+		}
+
+		google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+    
+  </head>
+  
+  <body>
+  
+  	<div id="secondHead">
+  	
+  		<img src="http://i.imgur.com/IldP7PK.png" alt="logo" class="logo2"/> <h2>ERIN WARD</h2>
+  		
+  	</div>
+  
+  	<section id="container">
+  		
+    	<div id="map-canvas"></div>
+    	
+    	<div id="sidebar">hi</div>
+    		
+    </section>
+    
+  </body>
+  
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>MDN Example</title>
+<script type="text/javascript">
+var bAppended = false, oBookmark = document.createElement("div");
+oBookmark.id = "arrowUp";
+oBookmark.innerHTML = "<a href=\"#\" title=\"Top of the page.\">&uarr;<\/a>";
+ 
+onscroll = function() {
+  var nVScroll = document.documentElement.scrollTop || document.body.scrollTop;
+  bAppended = nVScroll > 150 ?
+    bAppended || (document.body.appendChild(oBookmark), true)
+    : bAppended && (document.body.removeChild(oBookmark), false);
+};
+</script>
+<style type="text/css">
+
+#arrowUp {
+  position: fixed;
+  background-color: black;
+  height: 75px;
+  width: 100%;
+  right: 0px;
+  top: 0px;
+  font-size: 48px;
+}
+#arrowUp a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: serif;
+}
+
+</style>
+</head>
+
+<body>
+<p>
+<img src="http://i.imgur.com/QX7Dp1p.jpg">
+<br><br>
+Hi!
+<br><br>
+<img src="http://i.imgur.com/QX7Dp1p.jpg">
+<br><br>
+Hi!
+<br><br>
+<img src="http://i.imgur.com/QX7Dp1p.jpg">
+<br><br>
+Hi!
+<br><br>
+<img src="http://i.imgur.com/QX7Dp1p.jpg">
+<br><br>
+Hi!
+<br><br>
+
+</p>
+</body>
+
+</html>

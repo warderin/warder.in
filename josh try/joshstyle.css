@@ -1,0 +1,107 @@
+/* style.css */
+
+body, html {
+padding: 0; 
+margin: 0;
+background-color: #000;
+}
+
+header {
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#nav {
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+}
+
+h1 {
+padding: 0px;
+margin: 20px;
+text-align: center;
+font-weight: 400;
+color: #FFF;
+font-size: 60pt;
+font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+}
+
+h2 {
+display: inline;
+text-decoration: none;
+color: #FFF;
+font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+font-weight: 400;
+font-size: 30pt;
+}
+
+h3 {
+width: 250px;
+display: block;
+padding: 3px 25px 0px 25px;
+text-decoration: none;
+color: #000;
+background-color: #999;
+font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+font-weight: 400;
+font-size: 24pt;
+}
+
+#news h3 {
+width: 400px;
+}
+
+h4 {
+color: #FFF;
+font-family: Helvetica;
+font-size: 16pt;
+font-weight: 100;
+padding: 0px;
+margin: 0px;
+display: inline;
+}
+
+p {
+font-family: Helvetica;
+font-weight: 200;
+font-size: 12pt;
+color: #FFF;
+}
+
+#news i {
+color: #CCC;
+}
+
+ul {
+padding: 0px;
+display: block;
+width: 100%;
+}
+
+li {
+display: inline;
+float: left;
+width: 25%;
+text-align: center;
+}
+
+#blogcontainer {
+padding-top: 50px;
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#news {
+width: 500px;
+position: relative;
+float: left;
+}
+
+#shows {
+width: 300px;
+position: relative;
+float: right;
+}

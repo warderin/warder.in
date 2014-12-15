@@ -1,0 +1,157 @@
+<?php session_start(); ?>
+
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+  
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    
+    <meta charset="utf-8">
+    
+    <title>Road Trip</title>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <link rel="shortcut icon" href="icon.ico" >
+		
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700|Roboto:400,300' rel='stylesheet' type='text/css'>
+		
+    
+    <style>
+    
+    html, body { 
+    width: 100%; 
+    height: 100%;
+    font-size: 12pt; 
+    }
+    
+   #container {
+    top: 75px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+    }
+    
+    #map-canvas {
+    
+    width: 80%;
+    top: 75px;
+    left: 0;
+	bottom: 0;
+    position: absolute;
+    z-index: 200;
+    }
+    
+    #sidebar {    
+    width: 20%;
+    position: absolute;
+    top: 75px;
+	right: 0;
+	bottom: 0;
+    background-color: #CCC;
+    }
+    
+    #sidebar p {
+    padding: 15px 25px;
+    }
+    
+    #sidebar form {
+    position: relative;
+    padding: 25px;
+    bottom: 0;
+    }
+    
+    #sidebar label {
+    font-style: bold;
+    }
+    
+    #sidebar input {
+	background-color: #FFF;
+	margin-bottom: 15px;
+	font-family: 'Roboto', sans-serif;
+	border: 1px solid #000;
+	font-size: 12pt;
+	width: 100%;
+	left: 0 auto;
+	right: 0 auto;
+	min-height: 20px;
+	display: block;
+	}
+    
+    </style>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    
+    <script>
+
+	
+		function initialize() {
+		
+  			var home = new google.maps.LatLng(50.47018,-104.648316);
+  			var mapOptions = {
+    			zoom: 4,
+    			center: home,
+    			mapTypeId: google.maps.MapTypeId.ROADMAP
+  			}
+
+  			var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+  			var routeLayer = new google.maps.KmlLayer( {
+    			url: 'http://warder.in/Untitledlayer.kml'
+  			} );
+  	
+  			routeLayer.setMap(map);
+		
+		}
+
+		google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+    
+  </head>
+  
+  <body>
+  
+  	<div id="secondHead">
+  	
+  		<a href="http://warder.in/home/"><img src="http://i.imgur.com/IldP7PK.png" alt="logo" class="logo2"/> <h2>ERIN WARD</h2> </a>
+  		
+  	</div>
+  
+  	<section id="container">
+  		
+    	<div id="map-canvas"></div>
+    	
+    	<div id="sidebar">
+    	
+    		<p>
+    		
+    			Help us plan our road trip!
+    			
+    			<br><br>
+    			
+    			Suggest a place to add to the map by using the form below!
+    		
+    		</p>
+    		
+    		<form action="getdata.php" method="post" enctype="text/plain">
+					
+				<label for="name">Name: </label>
+				<input type="text" name="name" placeholder="Liz Lemon" required/>					
+					
+				<label for="message">Suggestion: </label>
+				<input type="text" name="place" placeholder="I want to go to there." required></textarea>					
+					
+  				<input type="submit" value="Send">
+    		
+    		</form>
+    	
+    	</div>
+    		
+    </section>
+    
+  </body>
+  
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+<script type="text/javascript">
+
+function checkDiv() {
+
+if (document.getElementById('toggletext').style.display === "none") {
+   document.getElementById('toggletext').style.display = "block";
+}
+
+else {
+	document.getElementById('toggletext').style.display = "none";
+}
+
+}
+
+</script>
+
+</head>
+
+
+<header>
+<h3><a id="displaytext" onclick="checkDiv()">Context</a></h3>
+ 
+<nav id="toggletext" style="display:none;">
+        <ul>
+                <li><a href="http://colinarabyniuk.com">Colin A Rabyniuk</a> &nbsp;</li>
+                <li><a href="http://twitter.com/colinarabyniuk">Twitter</a>&nbsp;</li>
+                <li><a href="mailto:colinxr@gmail.com">Email</a>&nbsp;</li>
+        </ul>
+</nav>
+ 
+</header>
+
+</html>
